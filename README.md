@@ -19,7 +19,7 @@ README – PL/SQL Assignment
 
 -How SELECT INTO works and the importance of returning a single row
 
-The difference between IF statements and CASE expressions
+-The difference between IF statements and CASE expressions
 
 -How to use cursors to process multiple rows
 
