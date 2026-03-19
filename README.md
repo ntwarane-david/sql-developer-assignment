@@ -1,5 +1,5 @@
 README – PL/SQL Assignment
-##Approach Used
+## Approach Used
 
 -In this assignment, I followed a step-by-step approach to solve each problem using PL/SQL concepts.
 
@@ -9,7 +9,7 @@ README – PL/SQL Assignment
 
 -Finally, I combined all concepts in Part 5 to build a complete student performance report, integrating conditions, loops, and data retrieval.
 
-##Lessons Learned
+## Lessons Learned
 
 -Through this assignment, I learned:
 
@@ -27,7 +27,7 @@ The difference between IF statements and CASE expressions
 
 -How to combine all these concepts to solve real-world database problems
 
-##Challenges Faced
+## Challenges Faced
 
 -During this assignment, I faced a few challenges:
 
