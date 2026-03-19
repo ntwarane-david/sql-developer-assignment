@@ -1,42 +1,62 @@
-README – PL/SQL Assignment
-## Approach Used
+## Approach
 
--In this assignment, I followed a step-by-step approach to solve each problem using PL/SQL concepts.
-
--First, I started with simple variable declarations and output statements (DBMS_OUTPUT) to understand how PL/SQL blocks work. Then, I moved to retrieving data from database tables using SELECT INTO.
-
--After that, I applied decision-making structures like IF-ELSIF and CASE statements to classify students, salaries, and grades. I also used loops and cursors to handle multiple records and perform calculations such as averages and totals.
-
--Finally, I combined all concepts in Part 5 to build a complete student performance report, integrating conditions, loops, and data retrieval.
+For this assignment, I ntwarane david used a hands-on approach by practicing each concept directly in Oracle. so I started with simple tasks like variables and printing, then gradually moved to more advanced topics such as conditions, loops, and cursors. Whenever I faced errors, I took time to debug and understand the problem instead of skipping it. This helped me clearly understand how Oracle behaves.
 
 ## Lessons Learned
 
--Through this assignment, I learned:
+-IN Task 1.1: Variables & Printing
+I learned that Oracle does not display BOOLEAN values directly. To show TRUE or FALSE, I need to use a CASE expression or an IF statement to convert the result into readable text.
 
--How to write and structure PL/SQL blocks using DECLARE, BEGIN, and END
+-IN Task 1.2: SELECT INTO Basics
+I realized that SELECT INTO can fail if no record is found. To avoid this, I now use specific WHERE conditions and handle errors using EXCEPTION blocks.
 
--The use of %TYPE to make variables flexible and consistent with database columns
+-TN Task 1.3: Understanding %TYPE
+Using %TYPE helped me avoid hardcoding data types. It allows variables to automatically match the table column type, making the code easier to maintain.
 
--How SELECT INTO works and the importance of returning a single row
+-IN Task 2.1: Math & Formatting
+I learned how to use TO_CHAR to format numbers properly, especially for financial values. This makes outputs clean and readable.
 
--The difference between IF statements and CASE expressions
+- IN Task 2.2: IF/ELSIF Logic
+I understood that the order of conditions is important. Starting with the highest condition ensures correct results.
 
--How to use cursors to process multiple rows
+- IN Task 2.3: Enabling Output
+I learned that I must use SET SERVEROUTPUT ON to see output from my code.
 
--How to handle errors using exceptions like NO_DATA_FOUND
+- IN Task 3.1: Compound Conditions (AND/OR)
+I learned to use parentheses to group conditions correctly and avoid logical mistakes.
 
--How to combine all these concepts to solve real-world database problems
+- IN Task 3.2: Handling NULLs
+I discovered that NULL cannot be compared using =. Instead, I must use IS NULL or IS NOT NULL.
+
+-IN Task 3.3: Simple CASE Statements
+I learned that Simple CASE works only for exact matches, while conditions and ranges require a searched CASE.
+
+- IN Task 4.1: Searched CASE & Inline Logic
+I learned that inline CASE statements can replace long IF/ELSE blocks, making code shorter and cleaner.
+
+- IN Task 4.2: Basic LOOP & Exit Conditions
+I understood the importance of EXIT WHEN to prevent infinite loops.
+
+-IN Task 4.3: WHILE Loops & Cursors
+I learned to use %FOUND in WHILE loops to control when to stop fetching records.
+
+-IN Task 5: Nested FOR Loops
+I learned that nested loops are efficient when used with simple ranges, but heavy operations inside inner loops should be avoided.
 
 ## Challenges Faced
 
--During this assignment, I faced a few challenges:
+-SELECT INTO errors when no data is found
 
--Understanding how SELECT INTO works and handling errors when no data is returned
+-Confusion when working with NULL values
 
--Writing correct conditions in IF and CASE statements
+-Writing correct logical conditions using AND and OR
 
--Managing loops and cursors, especially remembering when to open, fetch, and close them
+-Managing cursors (open, fetch, close)
 
--Debugging syntax errors and ensuring proper use of semicolons and /
+-Avoiding infinite loops
 
--However, through practice and testing the code step by step, I was able to overcome these challenges and improve my understanding of PL/SQL.
+-Formatting output correctly
+
+## Conclusion
+
+-This assignment helped me improve my understanding of Oracle SQL and PL/SQL. I became better at debugging errors, writing logical conditions, and structuring clean and efficient code.
